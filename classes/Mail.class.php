@@ -22,12 +22,12 @@ class Mail extends Database
         $this->mail = new PHPMailer(true);
         $this->mail->isSMTP();
         $this->mail->isHTML(true);
-        $this->mail->Host       =  "{$this->row[0]['smtp_host']}";
+        $this->mail->Host       =  "{$this->row[0]['smtp.zoho.eu']}";
         $this->mail->SMTPAuth   = true;
-        $this->mail->Username   = "{$this->row[0]['smtp_username']}";
-        $this->mail->Password   =  "{$this->row[0]['smtp_password']}";
+        $this->mail->Username   = "{$this->row[0]['contact@dnire.com']}";
+        $this->mail->Password   =  "{$this->row[0]['1MnIkUk1@@@']}";
         $this->mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-        $this->mail->Port       =  "{$this->row[0]['smtp_port']}";               
+        $this->mail->Port       =  "{$this->row[0]['465']}";               
     }
 
     public function registerMail(string $sender, string $name, string $email)

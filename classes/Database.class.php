@@ -7,7 +7,7 @@ class Database
     const ip = 'localhost';
     const name = 'billing';
     const username = 'root';
-    const password = '';
+    const password = '1MnIkUk1';
     private array $row;
     private PDOStatement $sql;
 
